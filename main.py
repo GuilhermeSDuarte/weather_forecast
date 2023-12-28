@@ -31,7 +31,6 @@ def main(page: ft.Page):
                          text_size=16,
                          content_padding=0,
                          )
-        text = city_name
 
         return text
 
@@ -142,11 +141,11 @@ def main(page: ft.Page):
             on_hover=lambda e: _expand(e),
             content=Column(
                 alignment='start',
-                spacing=10,
+                spacing=20,
                 controls=[
                     Row(
                         alignment='center',
-                        controls=[_text()]
+                        controls=[Text("São Paulo", size=16)]
                     ),
                     Row(
                         alignment='center',
