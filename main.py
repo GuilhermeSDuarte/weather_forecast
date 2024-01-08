@@ -3,7 +3,7 @@ import flet as ft
 from flet import *
 import datetime
 
-api_key = "f785813693eb1ea0af7a78fb3ce3023a"
+api_key = "api_key"
 city_name = "São Paulo"
 current = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&lang=pt_br").json()
 print(current)
